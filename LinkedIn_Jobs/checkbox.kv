@@ -1,0 +1,217 @@
+<MyLayout>:
+    orientation:"vertical"
+    size: root.width, root.height
+            
+    Label:
+        text:"Select the Sort Order of Jobs as per below choices"
+        font_size:25
+    
+    GridLayout:
+        cols:2
+
+        Label:
+            text:"Most recent"
+            font_size:15
+        
+        CheckBox:
+            group:"Sort By"
+            on_active:root.SortBy_click(self,self.active,"Most recent")
+
+        Label:
+            text:"Most relevant"
+            font_size:15
+        
+        CheckBox:
+            group:"Sort By"
+            on_active:root.SortBy_click(self,self.active,"Most relevant")
+
+
+
+
+
+    Label:
+        text:"Select the Date Posted for Jobs"
+        font_size:25
+    
+    GridLayout:
+        cols:2
+
+        Label:
+            text:"Past Month"
+            font_size:15
+        
+        CheckBox:
+            group:"Date Posted"
+            on_active:root.DatePosted_click(self,self.active,"Past Month")
+
+        Label:
+            text:"Past Week"
+            font_size:15
+        
+        CheckBox:
+            group:"Date Posted"
+            on_active:root.DatePosted_click(self,self.active,"Past Week")
+
+        Label:
+            text:"Past 24 hours"
+            font_size:15
+        
+        CheckBox:
+            group:"Date Posted"
+            on_active:root.DatePosted_click(self,self.active,"Past 24 hours")                
+
+        Label:
+            text:"Any Time"
+            font_size:15
+        
+        CheckBox:
+            group:"Date Posted"
+            on_active:root.DatePosted_click(self,self.active,"Any Time")   
+
+
+
+
+
+    Label:
+        text:"Select the Experience Level for Jobs"
+        font_size:25
+    
+    GridLayout:
+        cols:2
+
+        Label:
+            text:"Internship"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.Exp_click(self,self.active,"Internship")
+
+        Label:
+            text:"Entry level"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.Exp_click(self,self.active,"Entry level")
+
+        Label:
+            text:"Associate"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.Exp_click(self,self.active,"Associate")                
+
+        Label:
+            text:"Mid-Senior level"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.Exp_click(self,self.active,"Mid-Senior level")   
+
+        Label:
+            text:"Director"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.Exp_click(self,self.active,"Director")  
+
+        Label:
+            text:"Executive"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.Exp_click(self,self.active,"Executive")
+
+
+
+
+
+    Label:
+        text:"Select the Entry Level for Jobs"
+        font_size:25
+    
+    GridLayout:
+        cols:2
+
+        Label:
+            text:"Full-time"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.JobLevel_click(self,self.active,"Full-time")
+
+        Label:
+            text:"Part-time"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.JobLevel_click(self,self.active,"Part-time")
+
+        Label:
+            text:"Contract"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.JobLevel_click(self,self.active,"Contract")                
+
+        Label:
+            text:"Temporary"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.JobLevel_click(self,self.active,"Temporary")   
+
+        Label:
+            text:"Volunteer"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.JobLevel_click(self,self.active,"Volunteer")  
+
+        Label:
+            text:"Internship"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.JobLevel_click(self,self.active,"Internship")                
+
+
+
+
+
+
+    Label:
+        text:"Select the Work Mode of choice for Jobs"
+        font_size:25
+    
+    GridLayout:
+        cols:2
+
+        Label:
+            text:"Hybrid"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.WorkMode_click(self,self.active,"Hybrid")
+
+        Label:
+            text:"Remote"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.WorkMode_click(self,self.active,"Remote")
+
+        Label:
+            text:"On-site"
+            font_size:15
+        
+        CheckBox:
+            on_active:root.WorkMode_click(self,self.active,"On-site")                
+
+
+
+
+
+        Label:
+            id:output_label
+            text: ""
+

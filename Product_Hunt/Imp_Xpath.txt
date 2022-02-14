@@ -1,0 +1,31 @@
+//div[contains(@data-test,'homepage-section')]
+//div[@data-test='homepage-section-1']//a[contains(@data-test,'tagline')]
+//button[@data-test='show-more']
+//aside[@class='styles_aside__1Wl8x']//a[contains(@href,'/r/cb')]
+
+406 - 9 - 661
+
+699 - 32 - 1006
+
+
+28
+29
+20
+36
+22
+33
+41
+24
+21
+22
+38
+36
+46
+53
+33
+16
+24
+40
+39
+41
+642
